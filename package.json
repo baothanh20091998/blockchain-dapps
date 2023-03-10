@@ -22,6 +22,7 @@
     "@types/react-dom": "18.0.11",
     "buffer": "^6.0.3",
     "cosmjs-types": "^0.7.1",
+    "cosmwasm": "^1.1.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "ethereum-cryptography": "^1.2.0",
