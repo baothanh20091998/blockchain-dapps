@@ -77,7 +77,9 @@ export default function Home() {
   };
 
   const onEnable = () => {
+    //@ts-expect-error
     window.keplr.enable("atlantic-1");
+    //@ts-expect-error
     window.keplr.experimentalSuggestChain({
       bech32Config: {
         bech32PrefixAccAddr: "juno",
@@ -109,6 +111,7 @@ export default function Home() {
   };
 
   const onSign = async () => {
+    //@ts-expect-error
     window.keplr.signArbitrary(
       chain,
       address,
@@ -119,6 +122,7 @@ export default function Home() {
   const onSend = async () => {
     setLoading(true);
     const txRaw = await getSignTx();
+    //@ts-expect-error
     window.keplr.sendTx(chain, txRaw, "async");
     setLoading(false);
   };
